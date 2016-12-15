@@ -1,0 +1,15 @@
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.Tests.dll
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.Tests.pdb
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\FluentAssertions.Core.dll
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\FluentAssertions.dll
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\nunit.framework.dll
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.dll
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.pdb
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\FluentAssertions.pdb
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\FluentAssertions.xml
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\FluentAssertions.Core.pdb
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\FluentAssertions.Core.xml
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\nunit.framework.xml
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\obj\Debug\StringCalculatorKata.Tests.csprojResolveAssemblyReference.cache
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\obj\Debug\StringCalculatorKata.Tests.dll
+c:\users\lewis.taylor\documents\visual studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\obj\Debug\StringCalculatorKata.Tests.pdb

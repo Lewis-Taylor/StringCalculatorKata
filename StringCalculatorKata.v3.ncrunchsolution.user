@@ -1,0 +1,8 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AutoEnable>True</AutoEnable>
+    <CurrentEngineMode>Run impacted tests automatically, others manually [Global]</CurrentEngineMode>
+    <StatusIndicatorSplitterDistance>67</StatusIndicatorSplitterDistance>
+    <TestsWindowSplitterDistance>565</TestsWindowSplitterDistance>
+  </Settings>
+</SolutionConfiguration>
