@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
 
 namespace StringCalculatorKata.Tests
@@ -43,6 +42,14 @@ namespace StringCalculatorKata.Tests
         public void ReturnSum_WhenAdding_GivenNumberCommaNumber(string numberCommaNumber, int expectedSum)
         {
             var sum = StringCalculator.Add(numberCommaNumber);
+
+            sum.Should().Be(expectedSum);
+        }
+
+        [TestCase("200,200,200", 600)]
+        public void ReturnSum_WhenAdding_GivenManyNumbers(string manyNumbers, int expectedSum)
+        {
+            var sum = StringCalculator.Add(manyNumbers);
 
             sum.Should().Be(expectedSum);
         }
