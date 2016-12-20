@@ -47,6 +47,9 @@ namespace StringCalculatorKata.Tests
         }
 
         [TestCase("200,200,200", 600)]
+        [TestCase("2000,2000,2000", 6000)]
+        [TestCase("20000,20000,20000", 60000)]
+        [TestCase("100,200,1000,500", 1800)]
         public void ReturnSum_WhenAdding_GivenManyNumbers(string manyNumbers, int expectedSum)
         {
             var sum = StringCalculator.Add(manyNumbers);
