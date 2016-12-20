@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 namespace StringCalculatorKata
 {
@@ -10,13 +8,15 @@ namespace StringCalculatorKata
         public static int Add(string numbersToParse)
         {
             var sum = 0;
-            
+
             if (numbersToParse == string.Empty)
             {
                 return sum;
             }
 
-            sum = numbersToParse.Split(new[]{','},StringSplitOptions.RemoveEmptyEntries)
+            var separators = new[] { ',','\n' };
+
+            sum = numbersToParse.Split(separators, StringSplitOptions.RemoveEmptyEntries)
                 .Sum(digit => int.Parse(digit));
 
             return sum;

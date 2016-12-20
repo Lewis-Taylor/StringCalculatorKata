@@ -56,5 +56,15 @@ namespace StringCalculatorKata.Tests
 
             sum.Should().Be(expectedSum);
         }
+
+        [TestCase("1\n2,3", 6)]
+        [TestCase("2\n4,6", 12)]
+        [TestCase("4\n8,12", 24)]
+        public void Return_Sum_WhenAdding_GivenManyNumbersAndNewLine(string manyNumbers, int expectedSum)
+        {
+            var sum = StringCalculator.Add(manyNumbers);
+
+            sum.Should().Be(expectedSum);
+        }
     }
 }
