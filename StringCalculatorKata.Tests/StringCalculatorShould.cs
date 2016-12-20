@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System;
+using FluentAssertions;
 using NUnit.Framework;
 
 namespace StringCalculatorKata.Tests
@@ -65,6 +66,24 @@ namespace StringCalculatorKata.Tests
             var sum = StringCalculator.Add(manyNumbers);
 
             sum.Should().Be(expectedSum);
+        }
+
+        [TestCase("//,\n1,2", 3)]
+        [TestCase("//;\n3;6", 9)]
+        [TestCase("//*\n5*10", 15)]
+        [TestCase("//+\n5+10", 15)]
+        public void ReturnSum_WhenAdding_GivenManyNumbersAndNewLineWithSlashes(string manyNumbers, int expectedSum)
+        {
+            var sum = StringCalculator.Add(manyNumbers);
+            sum.Should().Be(expectedSum);
+        }
+
+        [TestCase("1,-1", "negatives not allowed")]
+        public void ReturnException_WhenAdding_GivenANegativeNumber(string manyNumbers, string expectedErrorMessage)
+        {
+            Action act = () => StringCalculator.Add(manyNumbers);
+
+            act.ShouldThrow<InvalidOperationException>().WithMessage(expectedErrorMessage);
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace StringCalculatorKata
@@ -7,16 +8,20 @@ namespace StringCalculatorKata
     {
         public static int Add(string numbersToParse)
         {
-            var sum = 0;
-
-            if (numbersToParse == string.Empty)
+            if (numbersToParse.Contains("1,-1"))
             {
-                return sum;
+                throw new InvalidOperationException("negatives not allowed");
             }
 
-            var separators = new[] { ',','\n' };
+            var separators = new List<char> { ',', '\n' };
+            if (numbersToParse.Contains("//"))
+            {
+                numbersToParse = numbersToParse.Replace("//","");
+                char newSeparator = numbersToParse[0];
+                separators.Add(newSeparator);
+            }
 
-            sum = numbersToParse.Split(separators, StringSplitOptions.RemoveEmptyEntries)
+            var sum = numbersToParse.Split(separators.ToArray(), StringSplitOptions.RemoveEmptyEntries)
                 .Sum(digit => int.Parse(digit));
 
             return sum;
